@@ -27,7 +27,7 @@ const TopNavigationPane = () => {
                         fontSize : "1.2rem"
                     }}>{"<"}</Typography>
                     <Typography sx={{
-                        fontFamily: "'Agustina Regular', 'Pacifico'",
+                        fontFamily: "'Pacifico'",
                         fontSize : "1.2rem"
                     }}>{"George Kimari"}</Typography>
                     <Typography sx={{
@@ -47,6 +47,7 @@ const TopNavigationPane = () => {
 
                     <Button color={"inherit"} sx={ButtonTheme}>About me</Button>
                     <Button color={"inherit"} sx={ButtonTheme}>Portifolio</Button>
+                    <Button color={"inherit"} sx={ButtonTheme}>Skills</Button>
                     <Button color={"inherit"} sx={ButtonTheme}>Contacts</Button>
                 </Stack>
                 <IconButton onClick={() => setDrawerOpen(true)}>
@@ -85,7 +86,7 @@ const TopNavigationPane = () => {
                     }}><Button sx={{
                         width : "200px",
                         height : "50px"
-                    }} color={"inherit"}>Socials</Button></Stack>
+                    }} color={"inherit"}>Skills</Button></Stack>
                     <Divider />
                     <Stack width={"200px"} sx={{
                         height: "70px",
