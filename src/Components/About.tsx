@@ -8,21 +8,23 @@ const About = () => {
             bgcolor : "lightgray",
             marginTop : "60px",
         }}>
-            <Paper elevation={3} variant="outlined" sx={{
+            <Paper elevation={3} sx={{
                 display : "flex",
                 flexDirection : "column",
                 justifyContent : "center",
                 alignItems : "center",
-                bgcolor: "black"
+                bgcolor: "#F05C05",
+                minHeight : "100vh"
             }} >
                 <Avatar sx={{
                     width: "250px",
                     height : "250px",
         
                 }} alt="George's avatar" src="myavatar.png"/>
-                <Typography variant="h3" color={"yellow"}>Hello</Typography>
-                <Typography variant="h4">I'm George, a software engineer and problem solver.</Typography>
+                <Typography variant="h4" >Hello</Typography>
+                <Typography variant="h5" >I'm George, a software engineer and problem solver.</Typography>
             </Paper>
+
         </Stack>
     )
 }

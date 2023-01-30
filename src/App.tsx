@@ -3,6 +3,8 @@ import React from 'react';
 
 import './App.css';
 import About from './Components/About';
+import Contacts from './Components/Contacts';
+import Skills from './Components/Skills';
 import TopNavigationPane from './Components/TopNavigationPane/TopNavigationPane';
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
     <div className="App">
       <TopNavigationPane />
       <About />
+      <Skills />
+      <Contacts />
     </div>
   );
 }
