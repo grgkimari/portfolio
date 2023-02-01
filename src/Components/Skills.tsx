@@ -21,7 +21,7 @@ const Skills = () => {
       padding : "0.5rem",
       margin : "1rem auto"
     }}>
-      <Typography variant="h5" component={"h3"}>Tech Stack</Typography>
+      <Typography id="skills" variant="h5" component={"h3"}>Tech Stack</Typography>
 
         <ImageList cols={4}>
           <ImageListItem title="HTML">

@@ -31,7 +31,7 @@ const Contacts = () => {
         <Stack spacing={2} sx={{
         display : "grid",
         placeContent : "center"
-    }}>
+    }} id="contacts">
         <Typography variant="h5">Contact me</Typography>
       <List>
         <ListItem>

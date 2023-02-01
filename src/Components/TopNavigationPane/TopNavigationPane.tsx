@@ -41,10 +41,10 @@ const TopNavigationPane = () => {
                     
                 }}>
 
-                    <Button color={"inherit"} sx={ButtonTheme}>About me</Button>
-                    <Button color={"inherit"} sx={ButtonTheme}>Portifolio</Button>
-                    <Button color={"inherit"} sx={ButtonTheme}>Skills</Button>
-                    <Button color={"inherit"} sx={ButtonTheme}>Contacts</Button>
+                    <Button color={"inherit"} sx={ButtonTheme} href="#about">About me</Button>
+                    <Button color={"inherit"} sx={ButtonTheme} href="#projects">Projects</Button>
+                    <Button color={"inherit"} sx={ButtonTheme} href="#skills">Skills</Button>
+                    <Button color={"inherit"} sx={ButtonTheme} href="#contacts">Contacts</Button>
                 </Stack>
                 <IconButton onClick={() => setDrawerOpen(true)}>
                     <Menu sx={{
@@ -61,10 +61,7 @@ const TopNavigationPane = () => {
                         height: "70px",
                         display : "grid",
                         placeContent : "center"
-                    }}><Button sx={{
-                        width : "200px",
-                        height : "50px"
-                    }} color={"inherit"}>About me</Button></Stack>
+                    }}><Link href={"#about"}component={"button"}>About</Link></Stack>
                     <Divider />
                     <Stack width={"200px"} sx={{
                         height: "70px",
@@ -73,7 +70,7 @@ const TopNavigationPane = () => {
                     }}><Button sx={{
                         width : "200px",
                         height : "50px"
-                    }} color={"inherit"}>Portifolio</Button></Stack>
+                    }} color={"inherit"} href="#projects">Projects</Button></Stack>
                     <Divider />
                     <Stack width={"200px"} sx={{
                         height: "70px",
@@ -82,7 +79,7 @@ const TopNavigationPane = () => {
                     }}><Button sx={{
                         width : "200px",
                         height : "50px"
-                    }} color={"inherit"}>Skills</Button></Stack>
+                    }} color={"inherit"} href="#skills">Skills</Button></Stack>
                     <Divider />
                     <Stack width={"200px"} sx={{
                         height: "70px",
@@ -91,7 +88,7 @@ const TopNavigationPane = () => {
                     }}><Button sx={{
                         width : "200px",
                         height : "50px"
-                    }} color={"inherit"}>Contacts</Button></Stack>
+                    }} color={"inherit"} href="#contacts">Contacts</Button></Stack>
                     <Divider />
 
                 </Drawer>

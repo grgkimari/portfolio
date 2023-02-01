@@ -3,4 +3,6 @@
   background-color: white;
 }
 
-
+:root {
+  scroll-behavior: smooth;
+}

@@ -1,6 +1,6 @@
 import { Avatar, Box, Paper, Stack, Typography } from "@mui/material"
 
-const About = () => {
+const Hero = () => {
     return(
         <Stack component={"div"} sx={{
             width : "100%",
@@ -31,4 +31,4 @@ const About = () => {
 }
 
 
-export default About
+export default Hero
