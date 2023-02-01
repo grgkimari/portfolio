@@ -73,15 +73,16 @@ const Contacts = () => {
             placeContent : "center"
           }}>
             <Typography variant="h5">Send me a message</Typography>
+            <Typography variant="body2" color="primary">Fields marked * are mandatory</Typography>
           <FormControl fullWidth>
-            <InputLabel htmlFor="nameField">Name</InputLabel>
+            <InputLabel htmlFor="nameField">Name*</InputLabel>
             <Input id="nameField" type="text"></Input>
           </FormControl>
           <Divider sx={{
             margin: ".5rem"
           }}/>
           <FormControl fullWidth>
-            <InputLabel htmlFor="emailField">Email address</InputLabel>
+            <InputLabel htmlFor="emailField">Email address*</InputLabel>
             <Input id="emailField" type="email"></Input>
           </FormControl>
           <Divider sx={{
@@ -95,7 +96,7 @@ const Contacts = () => {
             margin: ".5rem"
           }}/>
           <FormControl>
-            <InputLabel htmlFor="messageField">Message</InputLabel>
+            <InputLabel htmlFor="messageField">Message*</InputLabel>
             <TextareaAutosize placeholder="Message" required style={{
 
                 width: "400px",
@@ -103,7 +104,8 @@ const Contacts = () => {
                 borderRadius : "15px",
                 padding : "5px",
                 fontSize : "1.5rem",
-                margin :"3rem 0"
+                margin :"3rem 0",
+                
             }}/>
           </FormControl>
           <Button variant="contained" endIcon={<Send />}>Send</Button>

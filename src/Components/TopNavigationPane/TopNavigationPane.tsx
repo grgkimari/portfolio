@@ -14,7 +14,9 @@ const TopNavigationPane = () => {
         <AppBar>
             <Toolbar sx={{
                 display: "flex",
-                justifyContent : "flex-end"
+                justifyContent : "flex-end",
+                bgcolor : "whitesmoke",
+                color : "black"
             }}>
                 <Stack component={"span"} spacing={.5} direction="row" sx={{
                     color: "inherit",
@@ -22,18 +24,12 @@ const TopNavigationPane = () => {
                     position : "absolute",
                     left: 0
                 }}>
-                    <Typography sx={{
-                        fontFamily: "'Pacifico', cursive",
-                        fontSize : "1.2rem"
-                    }}>{"<"}</Typography>
+
                     <Typography sx={{
                         fontFamily: "'Pacifico'",
                         fontSize : "1.2rem"
-                    }}>{"George Kimari"}</Typography>
-                    <Typography sx={{
-                        fontFamily: "'Pacifico', cursive",
-                        fontSize : "1.2rem"
-                    }}>{"/>"}</Typography>
+                    }}>{"< George Kimari />"}</Typography>
+
     
                 </Stack>
                 <Stack spacing={2} direction="row" component={"span"} sx={{
@@ -52,7 +48,7 @@ const TopNavigationPane = () => {
                 </Stack>
                 <IconButton onClick={() => setDrawerOpen(true)}>
                     <Menu sx={{
-                        color: "white",
+                        color: "inherit",
                         display : {
                             xs : "flex",
                             sm : "none",

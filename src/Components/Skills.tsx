@@ -6,16 +6,23 @@ import {
   Link,
   Paper,
   Stack,
+  Typography,
 } from "@mui/material";
 import HtmlIcon from "@mui/icons-material/Html";
 import CssIcon from "@mui/icons-material/Css";
 import { Javascript } from "@mui/icons-material";
+import { padding } from "@mui/system";
 
 const Skills = () => {
   const ImageTheme = createTheme({});
   return (
-    <Paper>
-      <Link href="https://github.com/grgkimari">
+    <Paper elevation={3} sx={{
+      backgroundColor : "lightgray",
+      padding : "0.5rem",
+      margin : "1rem auto"
+    }}>
+      <Typography variant="h5" component={"h3"}>Tech Stack</Typography>
+
         <ImageList cols={4}>
           <ImageListItem title="HTML">
             <ImageListItemBar title="HTML" />
@@ -74,7 +81,7 @@ const Skills = () => {
             />
           </ImageListItem>
         </ImageList>
-      </Link>
+
     </Paper>
   );
 };
