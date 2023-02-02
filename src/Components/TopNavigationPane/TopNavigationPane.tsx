@@ -1,7 +1,8 @@
 import { AppBar, Button, Divider, Drawer, IconButton, Link, Stack, Toolbar, Typography } from "@mui/material"
 import './TopNavigationPane.css'
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Menu } from "@mui/icons-material";
+
 
 const TopNavigationPane = () => {
     const [drawerOpen, setDrawerOpen] = useState(false)
@@ -10,6 +11,9 @@ const TopNavigationPane = () => {
             "background" : "gray"
         }
     }
+    
+
+    
     return (
         <AppBar>
             <Toolbar sx={{
@@ -41,8 +45,8 @@ const TopNavigationPane = () => {
                     
                 }}>
 
-                    <Button color={"inherit"} sx={ButtonTheme} href="#about">About me</Button>
-                    <Button color={"inherit"} sx={ButtonTheme} href="#projects">Projects</Button>
+                    <Button color={"inherit"} sx={ButtonTheme} href="/#about">About me</Button>
+                    <Button color={"inherit"} sx={ButtonTheme} href="/#projects">Projects</Button>
                     <Button color={"inherit"} sx={ButtonTheme} href="#skills">Skills</Button>
                     <Button color={"inherit"} sx={ButtonTheme} href="#contacts">Contacts</Button>
                 </Stack>

@@ -3,3 +3,10 @@ export type ProjectRefProps = {
     link : string,
     imagelink : string
 }
+
+export type FormStateType = {
+    name : string | null,
+    email : string | null
+    subject : string,
+    message : string
+}
