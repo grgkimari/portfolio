@@ -1,12 +1,10 @@
 import {
-  createTheme,
   ImageList,
   ImageListItem,
   ImageListItemBar, Paper, Typography
 } from "@mui/material";
 
 const Skills = () => {
-  const ImageTheme = createTheme({});
   return (
     <Paper
       elevation={3}

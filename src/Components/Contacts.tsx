@@ -160,7 +160,7 @@ setState({
                 type="submit"
                 variant="contained"
                 endIcon={<Send />}
-href={"mailto:grgkimari@gmail.com?subject=" + `${state.subject}&body=Hello. I am ${state.name} \n\n${state.message}`}
+href={`mailto:grgkimari@gmail.com?subject=${state.subject}&body=Hello. I am ${state.name} \n\n${state.message}`}
               fullWidth>
                 Send
               </Button>
