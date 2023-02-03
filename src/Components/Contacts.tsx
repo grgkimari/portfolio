@@ -1,5 +1,7 @@
+import { Send } from "@mui/icons-material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import {
-  Box,
   Button,
   Divider,
   FormControl,
@@ -7,25 +9,13 @@ import {
   Input,
   InputLabel,
   List,
-  ListItem,
-  ListItemAvatar,
-  ListItemButton,
+  ListItem, ListItemButton,
   ListItemIcon,
   ListItemText,
   Paper,
-  Stack,
-  SvgIcon,
-  TextareaAutosize,
-  TextField,
-  Typography,
+  Stack, TextareaAutosize, Typography
 } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconPrefix, IconProp } from "@fortawesome/fontawesome-svg-core";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Send } from "@mui/icons-material";
-import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { FormStateType } from "../types";
 
 const Contacts = () => {
@@ -171,7 +161,7 @@ setState({
                 variant="contained"
                 endIcon={<Send />}
 href={"mailto:grgkimari@gmail.com?subject=" + `${state.subject}&body=Hello. I am ${state.name} \n\n${state.message}`}
-              >
+              fullWidth>
                 Send
               </Button>
               </form>

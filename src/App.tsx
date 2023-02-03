@@ -1,6 +1,3 @@
-import { AppBar, Box, Container, Typography } from '@mui/material';
-import React from 'react';
-
 import './App.css';
 import Hero from './Components/Hero';
 import Contacts from './Components/Contacts';
