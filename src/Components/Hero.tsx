@@ -1,5 +1,6 @@
-import { Avatar, Paper, Stack, Typography } from "@mui/material";
-
+import { Avatar, Icon, IconButton, Paper, Stack, Tooltip, Typography } from "@mui/material";
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import { GitHub, LinkedIn } from "@mui/icons-material";
 const Hero = () => {
   return (
     <Stack
@@ -36,6 +37,39 @@ const Hero = () => {
         <Typography variant="h6" component={"h2"}>
           I'm George, a software engineer and problem solver.
         </Typography>
+        <Stack direction="row">
+        <Tooltip title="Email">
+        <IconButton href={`mailto:grgkimari@gmail.com`}>
+          <AlternateEmailIcon sx={{color : "black",
+
+        borderRadius: "50%"
+        }}/>
+        </IconButton>
+        </Tooltip>
+        <Tooltip title="Github">
+        <IconButton href="https://github.com/grgkimari" target={"_blank"}>
+          <GitHub sx={{color : "black",
+        bgcolor :"white",
+        borderRadius: "50%"
+        }}/>
+        </IconButton>
+        </Tooltip>
+        <Tooltip title="Linkedin">
+        <IconButton href="https://www.linkedin.com/in/george-kamuyu-4794b9236" target={"_blank"}>
+          <LinkedIn sx={{
+            color: "black",
+            
+          }}/>
+        </IconButton>
+        </Tooltip>
+        <Tooltip title="Hackerrank">
+        <IconButton href="https://hackerrank.com/grgkimari" target={"_blank"}>
+          <Icon>
+          <img src="hackerrank.svg" alt="hackerrank icon"/>
+          </Icon>
+        </IconButton>
+        </Tooltip>
+        </Stack>
       </Paper>
     </Stack>
   );
