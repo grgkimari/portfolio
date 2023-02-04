@@ -1,14 +1,12 @@
 import { Menu } from "@mui/icons-material";
 import {
-    AppBar,
-    Button,
-    Divider,
-    Drawer,
-    IconButton,
-    Link,
-    Stack,
-    Toolbar,
-    Typography
+  AppBar,
+  Button,
+  Divider,
+  Drawer,
+  IconButton, Stack,
+  Toolbar,
+  Typography
 } from "@mui/material";
 import { useState } from "react";
 import "./TopNavigationPane.css";
@@ -101,9 +99,10 @@ const TopNavigationPane = () => {
               placeContent: "center",
             }}
           >
-            <Link href={"#about"} component={"button"}>
-              About
-            </Link>
+            <Button onClick={() => {
+              setDrawerOpen(false)
+              window.scrollTo(0,670)
+            }}>About</Button>
           </Stack>
           <Divider />
           <Stack
@@ -119,8 +118,11 @@ const TopNavigationPane = () => {
                 width: "200px",
                 height: "50px",
               }}
-              color={"inherit"}
-              href="#projects"
+          
+              onClick={ () => {
+                setDrawerOpen(false)
+                window.scrollTo(0, 1580)
+              }}
             >
               Projects
             </Button>
@@ -139,8 +141,11 @@ const TopNavigationPane = () => {
                 width: "200px",
                 height: "50px",
               }}
-              color={"inherit"}
-              href="#skills"
+
+              onClick={() => {
+                setDrawerOpen(false)
+                window.scrollTo(0,1200)
+              }}
             >
               Skills
             </Button>
@@ -159,8 +164,10 @@ const TopNavigationPane = () => {
                 width: "200px",
                 height: "50px",
               }}
-              color={"inherit"}
-              href="#contacts"
+onClick={() => {
+  setDrawerOpen(false)
+  window.scrollTo(0, 3700)
+}}
             >
               Contacts
             </Button>

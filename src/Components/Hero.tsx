@@ -12,7 +12,7 @@ const Hero = () => {
       }}
     >
       <Paper
-        elevation={3}
+        
         sx={{
           display: "flex",
           flexDirection: "column",

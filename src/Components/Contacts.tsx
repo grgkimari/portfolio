@@ -131,15 +131,17 @@ setState({
               <Divider
                 sx={{
                   margin: ".5rem",
+                  width: "100%"
                 }}
               />
               <FormControl>
                 <InputLabel htmlFor="messageField" >Message*</InputLabel>
                 <TextareaAutosize
+                
                   placeholder="Message"
                   required
                   style={{
-                    width: "400px",
+                    width: "100%",
                     height: "300px",
                     borderRadius: "15px",
                     padding: "5px",

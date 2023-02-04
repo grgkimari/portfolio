@@ -7,7 +7,7 @@ import {
 const Skills = () => {
   return (
     <Paper
-      elevation={3}
+
       sx={{
         backgroundColor: "lightgray",
         padding: "0.5rem",

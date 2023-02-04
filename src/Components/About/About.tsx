@@ -4,13 +4,14 @@ import "../TopNavigationPane/TopNavigationPane.css";
 const About = () => {
   return (
     <Paper
-      elevation={3}
+
       sx={{
         margin: "1rem 0",
         padding: "2rem",
       }}
       id="about"
     >
+      <Typography variant="h4" sx={{marginBottom : "1rem"}}>About me</Typography>
       <Typography variant="h6" component={"p"}>
         I am George Kimari. A software engineer specializing in creating high
         quality and performant web applications. As a life long learner I am
