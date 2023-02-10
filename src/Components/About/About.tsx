@@ -6,8 +6,10 @@ const About = () => {
     <Paper
 
       sx={{
-        margin: "1rem 0",
+        display : "grid",
+        placeContent : "center",
         padding: "2rem",
+        minHeight : "100vh"
       }}
       id="about"
     >

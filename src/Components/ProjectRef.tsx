@@ -5,7 +5,7 @@ import { ProjectRefProps } from "../types";
 const ProjectRef = (props: ProjectRefProps) => {
   return (
     <Paper
-      elevation={16}
+
       sx={{
         width: "250px",
         height: "250px",
@@ -16,6 +16,8 @@ const ProjectRef = (props: ProjectRefProps) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        border : "1px solid #7fa0ab",
+        backgroundColor : "#c6ade6"
       }}
     >
       <Typography variant="body1" component="h4">
@@ -27,7 +29,7 @@ const ProjectRef = (props: ProjectRefProps) => {
         href={props.link}
         endIcon={<VisibilityIcon />}
         sx={{
-          marginTop: "1.2rem",
+          marginTop: "2rem",
         }}
       >
         View

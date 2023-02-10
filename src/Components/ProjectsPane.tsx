@@ -1,64 +1,59 @@
-import { Paper, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import ProjectRef from "./ProjectRef";
 
 const ProjectsPane = () => {
   return (
-    <Paper
-      elevation={3}
-      sx={{
-        width: "100%",
-        display: "flex",
-        flexDirection: {
-          xs: "column",
-          md: "row",
-        },
-
-        padding: "1.5rem 0",
-        backgroundColor: "lightblue",
-      }}
-      id="projects"
+    <Grid container spacing={1}
+       id="projects"
+       sx={{
+        bgcolor : "lightblue",
+        minHeight : "100vh"
+       }}
     >
-      <Typography
-        variant="h6"
-        component="div"
+      <Grid item xs={12}><Typography
+        variant="h4"
+        component="h3"
         sx={{
           display: "grid",
           placeContent: "center",
+          width : "100vw",
+          flexWrap : "wrap",
+          marginTop : "1rem"
         }}
       >
         Project Samples
-      </Typography>
-      <ProjectRef
+      </Typography></Grid>
+      <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Password generator"
         link="https://grgkimari.github.io/password-guru"
         imagelink="github.jpg"
-      />
-      <ProjectRef
+      /></Grid>
+      <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Quote machine"
         link="https://grgkimari.github.io/quote-machine"
         imagelink="github.jpg"
-      />
-      <ProjectRef
+      /></Grid>
+      <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="React calculator"
         imagelink="github.jpg"
         link="https://grgkimari.github.io/nimble-calculator"
-      />
-      <ProjectRef
+      /></Grid>
+      <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Markdown Previewer"
         link="https://grgkimari.github.io/markdown-previewer"
         imagelink="github.jpg"
-      />
-      <ProjectRef
+      /></Grid>
+      <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Pomodoro Timer"
         link="https://grgkimari.github.io/pomodoro-timer-v2"
         imagelink="github.jpg"
-      />
-      <ProjectRef
+      /></Grid>
+      <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Beat Maker"
         link="https://grgkimari.github.io/special-disco"
         imagelink="github.jpg"
-      />
-    </Paper>
+      /></Grid>
+    </Grid>
   );
 };
 

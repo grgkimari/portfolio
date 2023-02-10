@@ -10,6 +10,7 @@ const Hero = () => {
         height: "100vh",
         bgcolor: "lightgray",
         marginTop: "60px",
+        border : "none"
       }}
     >
       <Paper
@@ -21,6 +22,7 @@ const Hero = () => {
           alignItems: "center",
           minHeight: "100vh",
           backgroundColor: "white",
+          border : "none"
         }}
       >
         <Avatar

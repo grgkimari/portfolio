@@ -27,6 +27,7 @@ const TopNavigationPane = () => {
           justifyContent: "flex-end",
           bgcolor: "whitesmoke",
           color: "black",
+          borderBottom : "4px solid black"
         }}
       >
         <Stack
