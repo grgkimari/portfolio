@@ -26,32 +26,33 @@ const ProjectsPane = () => {
       <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Password generator"
         link="https://grgkimari.github.io/password-guru"
-        imagelink="github.jpg"
+        imagelink="password-570317_960_720.jpg"
+        description="An online strong password generator and strength checker built with React JS"
       /></Grid>
       <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Quote machine"
         link="https://grgkimari.github.io/quote-machine"
-        imagelink="github.jpg"
+        imagelink='quotes-7669023_960_720.png'
       /></Grid>
       <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="React calculator"
-        imagelink="github.jpg"
+        imagelink="calculator-168360_960_720.jpg"
         link="https://grgkimari.github.io/nimble-calculator"
       /></Grid>
       <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Markdown Previewer"
         link="https://grgkimari.github.io/markdown-previewer"
-        imagelink="github.jpg"
+        imagelink="markdown-here.png"
       /></Grid>
       <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Pomodoro Timer"
         link="https://grgkimari.github.io/pomodoro-timer-v2"
-        imagelink="github.jpg"
+        imagelink='stopwatch-5153023_960_720.jpg'
       /></Grid>
       <Grid item xs={6} sm={4} md={3}><ProjectRef
         name="Beat Maker"
         link="https://grgkimari.github.io/special-disco"
-        imagelink="github.jpg"
+        imagelink="drums-3109364_960_720.jpg"
       /></Grid>
     </Grid>
   );

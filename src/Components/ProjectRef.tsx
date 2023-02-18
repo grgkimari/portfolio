@@ -1,32 +1,46 @@
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import { Button, Paper, Typography } from "@mui/material";
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Collapse, Typography } from "@mui/material";
+import { useState } from "react";
 import { ProjectRefProps } from "../types";
 
 const ProjectRef = (props: ProjectRefProps) => {
-  return (
-    <Paper
+  const [expanded, setExpanded] = useState<boolean>(false)
 
-      sx={{
-        width: "250px",
-        height: "250px",
-        margin: {
-          xs: "2.5rem auto",
-          sm: "auto 0.25rem",
-        },
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        border : "1px solid #7fa0ab",
-        backgroundColor : "#c6ade6"
-      }}
+const handleClick = () => {
+  setExpanded(!expanded)
+}
+
+  return (
+    <Card
+    variant="outlined"
+    sx={{
+      maxWidth : 345
+    }}
     >
-      <Typography variant="body1" component="h4">
+      <CardActionArea>
+      
+      <CardMedia
+      component={"img"}
+      width = "100%"
+      height={"200px"}
+      alt={props.name + " image"} src={props.imagelink}
+      ></CardMedia>
+      <Typography gutterBottom variant="body1" component="h4">
         {props.name}
       </Typography>
-      <img width={"150px"} alt={props.name + " image"} src={props.imagelink} />
+</CardActionArea>
+<CardActions  sx={{
+        display : "flex",
+        justifyContent : "space-evenly",
+        alignItems : "flex-end",
+        paddingBottom: "10px",
+        margin : "0px",
+      }} >
       <Button
         variant="contained"
         href={props.link}
+        target="_blank"
         endIcon={<VisibilityIcon />}
         sx={{
           marginTop: "2rem",
@@ -34,7 +48,26 @@ const ProjectRef = (props: ProjectRefProps) => {
       >
         View
       </Button>
-    </Paper>
+      {expanded ? <ExpandLess onClick={handleClick} sx={{
+        transform : "scale(1.5)",
+        ":hover" : {
+          color : "red"
+        }
+      }}/> : <ExpandMore onClick={handleClick} sx={{
+        transform : "scale(1.5)",
+        ":hover" : {
+          color : "green"
+        }
+      }} />}
+      </CardActions>
+      <Collapse in={expanded}>
+      <CardContent>
+        <Typography variant="body1">
+        {props.description}
+        </Typography>
+      </CardContent>
+      </Collapse>
+    </Card>
   );
 };
 
