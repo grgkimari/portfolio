@@ -1,6 +1,6 @@
-import { Avatar, Icon, IconButton, Paper, Stack, Tooltip, Typography } from "@mui/material";
+import { Avatar, Button, Icon, IconButton, Paper, Stack, Tooltip, Typography } from "@mui/material";
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import { Download, GitHub, LinkedIn } from "@mui/icons-material";
 const Hero = () => {
   return (
     <Stack
@@ -71,7 +71,18 @@ const Hero = () => {
           </Icon>
         </IconButton>
         </Tooltip>
+        
         </Stack>
+        <Button endIcon={<Download />} size="large"  target={"_blank"} href="George Kimari-CV.pdf" sx={{
+          bgcolor : "black",
+          color : "whitesmoke",
+          width : "100px",
+          marginTop : "10px",
+          '&:hover' : {
+            bgcolor : "#333"
+          }
+
+        }}>CV</Button>
       </Paper>
     </Stack>
   );
