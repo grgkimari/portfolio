@@ -73,6 +73,7 @@ const Hero = () => {
         </Tooltip>
         
         </Stack>
+        <Tooltip title="Download CV">
         <Button endIcon={<Download />} size="large"  target={"_blank"} href="George Kimari-CV.pdf" sx={{
           bgcolor : "black",
           color : "whitesmoke",
@@ -83,6 +84,7 @@ const Hero = () => {
           }
 
         }}>CV</Button>
+        </Tooltip>
       </Paper>
     </Stack>
   );
