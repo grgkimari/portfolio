@@ -2,12 +2,8 @@ import {
   Card,
   CardContent,
   CardMedia,
-  Grid,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
-  Paper,
-  Typography,
+  Grid, Paper,
+  Typography
 } from "@mui/material";
 
 const cardStyles = `.card-styles {
