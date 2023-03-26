@@ -102,7 +102,7 @@ const TopNavigationPane = () => {
           >
             <Button onClick={() => {
               setDrawerOpen(false)
-              window.scrollTo(0,670)
+              window.scrollTo(0,650)
             }}>About</Button>
           </Stack>
           <Divider />
@@ -122,7 +122,7 @@ const TopNavigationPane = () => {
           
               onClick={ () => {
                 setDrawerOpen(false)
-                window.scrollTo(0, 1580)
+                window.scrollTo(0, 4280)
               }}
             >
               Projects
@@ -145,7 +145,7 @@ const TopNavigationPane = () => {
 
               onClick={() => {
                 setDrawerOpen(false)
-                window.scrollTo(0,1200)
+                window.scrollTo(0,1350)
               }}
             >
               Skills
@@ -167,7 +167,7 @@ const TopNavigationPane = () => {
               }}
 onClick={() => {
   setDrawerOpen(false)
-  window.scrollTo(0, 3700)
+  window.scrollTo(0, 5350)
 }}
             >
               Contacts
