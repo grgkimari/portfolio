@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 
 const cardStyles = `.card-styles {
-  min-height : 300px;
+  min-height : 350px;
   padding-top : 12px;
 }`
 
